@@ -34,3 +34,26 @@ function playRound (C, P) {
 
     else return "Invalid choice";
 }
+
+function game () {
+  let score = 0;
+  let round;
+  for (let i=0; i<5; i++){
+    round = playRound( getComputerChoice(), getPlayerChoice() )
+    console.log(round);
+
+    if (round.includes("You win"))
+      score++;
+    else if (round.includes("You lose"))
+      score--;
+  }
+
+  if (score > 0)
+    console.log("You win the game!");
+  else if (score < 0)
+    console.log("You lose the game!")
+  else
+    console.log("It's a tie!")
+}
+
+game();
