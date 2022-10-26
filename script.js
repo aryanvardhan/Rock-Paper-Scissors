@@ -36,24 +36,23 @@ function playRound (C, P) {
 }
 
 function game () {
-  let score = 0;
+  let playerscore = 0;
+  let compscore = 0;
   let round;
-  for (let i=0; i<5; i++){
+  while ((playerscore < 5) && (compscore < 5)) {
     round = playRound( getComputerChoice(), getPlayerChoice() )
     console.log(round);
 
     if (round.includes("You win"))
-      score++;
+      playerscore++;
     else if (round.includes("You lose"))
-      score--;
+      compscore--;
   }
 
-  if (score > 0)
+  if (playerscore == 5)
     console.log("You win the game!");
-  else if (score < 0)
-    console.log("You lose the game!")
   else
-    console.log("It's a tie!")
+    console.log("You lose the game!")
 }
 
 game();
