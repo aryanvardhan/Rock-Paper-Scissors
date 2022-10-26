@@ -20,7 +20,7 @@ function playRound (C, P) {
       comp = i
     if (P == choices[i])
       player = i
-  }
+  } // associating each choice with a number so its easy to determine which choice wins the round.
 
 
     if (player == comp)
