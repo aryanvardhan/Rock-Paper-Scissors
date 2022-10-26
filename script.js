@@ -46,7 +46,7 @@ function game () {
     if (round.includes("You win"))
       playerscore++;
     else if (round.includes("You lose"))
-      compscore--;
+      compscore++;
   }
 
   if (playerscore == 5)
