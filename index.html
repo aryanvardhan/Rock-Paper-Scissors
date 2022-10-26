@@ -2,34 +2,38 @@
 <html lang='en'>
 
   <head>
+    <meta charset="utf-8"/>
+    <link rel='stylesheet' href='styles.css'/>
     <script src='script.js' defer></script>
   </head>
 
   <body>
-    <div class='header'>
-      <h1>Rock, Paper, Scissors</h1>
-      <button>New Match</button>
+    <div class ='header-container'>
+      <div class='header'>
+        <h1>Rock, Paper, Scissors</h1>
+        <button>New Match</button>
+      </div>
     </div>
 
-  </div class='body'>
-    <div class='score-container'>
-      <div class='score'>
-        <p>P</p>
-        <p>:</P>
-        <p>C</p>
+    <div class='main'>
+      <div class='score-container'>
+        <div class='score'>
+          <p>P</p>
+          <p>:</P>
+          <p>C</p>
+        </div>
+        <div class='score'>
+          <p>0</p>
+          <p>:</p>
+          <p>0</p>
+        </div>
       </div>
-      <div class='score'>
-        <p>0</p>
-        <p>:</p>
-        <p>0</p>
+      <div class='option-buttons'>
+        <button class='option-button' id='rock'>Rock</button>
+        <button class='option-button' id='paper'>Paper</button>
+        <button class='option-button' id='scissors'>Scissors</button>
       </div>
     </div>
-    <div class='option-buttons'>
-      <button class='option-button' id='rock'>Rock</button>
-      <button class='option-button' id='paper'>Paper</button>
-      <button class='option-button' id='scissors'>Scissors</button>
-    </div>
-  </div>
 
   </body>
 
