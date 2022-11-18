@@ -90,6 +90,11 @@ body {
   color: #1583CF;
 }
 
+.option-button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 #rock {
   background-color: #CF8B15;
 }
@@ -100,4 +105,9 @@ body {
 
 #scissors {
   background-color: #30B98D;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
 }
